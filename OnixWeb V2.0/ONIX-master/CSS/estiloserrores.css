@@ -1,0 +1,417 @@
+/* Variables de colores */
+:root {
+    --negro: #1b1d24;
+    --verde1: #365A08;
+    --verde2: #5d9d0b;
+    --verde3: #72EB3A;
+    --blanco: #f1f1f1;
+    --rojo: #FF0000;
+    --azul: #1a333e;
+    --azuleshover: #2196f3;
+    --grisclaro: #4E4B5076;
+}
+
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilos del cuerpo */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #1b1d24, #1b3847, #01585e);
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+}
+
+.nombre-logo {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabecera */
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 70px 0;
+    background-color: var(--azul);
+}
+
+/* Menú */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-size: 45px;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 800;
+    text-decoration: none;
+    margin-right: 100 px;
+}
+
+/* Elementos del menú */
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: var(--blanco);
+    display: block;
+    text-decoration: none;
+}
+
+/* Icono del menú */
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+/* Etiqueta de menú en pantallas pequeñas */
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Contenido de la cabecera */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0;
+    margin-top: 50px;
+}
+
+/* Imagen en la cabecera */
+.header-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+/* Texto en la cabecera */
+.header-txt {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-txt h1 {
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: var(--negro);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.header-txt p {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+
+
+/* Sección de iconos */
+.icons {
+    padding: 50px 0 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-1 {
+    flex-basis: calc(33.3% - 30px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto de iconos */
+.icon-txt h3 {
+    font-size: 20px;
+    color: var(--negro);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.icon-txt p {
+    font-size: 16px;
+    color: var(--negro);
+}
+
+
+
+/* Pie de página */
+.footer {
+    padding: 50px 0;
+    background-color: var(--negro);
+}
+
+/* Contenido del pie de página */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Enlaces en el pie de página */
+.link h3 {
+    font-size: 18px;
+    color: var(--blanco);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.link a {
+    font-size: 16px;
+    color: var(--blanco);
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Cambio de color para ofertas */
+.ofert-txt h3 {
+    color: var(--blanco);
+}
+
+/* Cambio de color para títulos de productos */
+.products container h2 {
+    color: var(--blanco);
+}
+
+/* Imágenes en bloque de productos */
+.d-block {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+/* Efecto hover para imágenes en bloque de productos */
+.d-block:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Imágenes en la sección de productos */
+.img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+/* Efecto hover para imágenes en la sección de productos */
+.img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Cambio de color para títulos y texto en lista */
+#lista-1 h2 {
+    color: var(--blanco);
+}
+
+.product-txt h3,
+.product-txt p {
+    color: var(--blanco);
+}
+
+/* Cambio de color para títulos de iconos */
+.icon-txt h3 {
+    color: var(--blanco);
+}
+
+/* Estilos para enlaces en lista */
+.link ul li a {
+    text-decoration: none;
+}
+
+/* Alineación del título de icono */
+.icon-txt h3 {
+    margin-left: 35px;
+}
+
+/* Espaciado para el texto de producto */
+.product-txt {
+    margin-top: 25px;
+}
+
+/* Estilos Floter*/
+
+.link ul li:not(:first-child) a:hover {
+    color: var(--azuleshover); /* Cambia el color al hacer hover */
+}
+
+
+.navegacion a:nth-child(5) {
+    margin-right: 30px;
+}
+
+.link-registro{
+    color: var(--azul);
+}
+
+
+/* Estilos del texto de error*/
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Ajusta esta altura según tus necesidades */
+    color: #f1f1f1;
+    background-color: #1a333e;
+  }
+
+
+/* Estilos responsivos */
+@media (max-width: 991px) {
+    /* Estilos para pantallas más pequeñas */
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu ul li a {
+        color: var(--blanco);
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .submenu:hover #carrito {
+        min-width: 100%;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .header-txt {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 70px;
+    }
+
+    .ofert {
+        padding: 30px 30px 0 30px;
+        flex-direction: column;
+    }
+
+    .ofert-1 {
+        margin-bottom: 30px;
+    }
+
+    .products {
+        padding: 0 30px 30px 30px;
+    }
+
+    .products h2 {
+        margin-bottom: 30px;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .product img {
+        width: 200px;
+        height: 280px;
+    }
+
+    .icon {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .icon-1 {
+        margin-bottom: 38px;
+    }
+
+    .blog {
+        padding: 0 30px 30px 30px;
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
